@@ -6,7 +6,8 @@
     "dev": "next dev -p 3002",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
     "next": "14.0.3",
@@ -20,6 +21,13 @@
     "eslint": "^8.54.0",
     "eslint-config-next": "14.0.3",
     "eslint-plugin-no-unused-vars-rest": "^1.0.6",
+    "prettier": "^3.1.0",
     "typescript": "^5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
   }
 }
